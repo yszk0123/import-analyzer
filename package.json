@@ -9,14 +9,14 @@
     "generate": "depcruise --exclude\"^node_modules\" --output-type json"
   },
   "dependencies": {
-    "dependency-cruiser": "^4.9.0",
-    "yargs": "^12.0.5"
+    "dependency-cruiser": "4.9.0",
+    "yargs": "12.0.5"
   },
   "devDependencies": {
-    "@types/node": "^10.12.18",
-    "@types/yargs": "^12.0.2",
-    "prettier": "^1.15.3",
-    "ts-node": "^7.0.1",
-    "typescript": "^3.2.2"
+    "@types/node": "10.12.18",
+    "@types/yargs": "12.0.2",
+    "prettier": "1.15.3",
+    "ts-node": "7.0.1",
+    "typescript": "3.2.2"
   }
 }
