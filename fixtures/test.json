@@ -1,0 +1,85 @@
+{
+    "modules": [
+        {
+            "source": "./fixtures/test.js",
+            "dependencies": [
+                {
+                    "resolved": "fixtures/testA.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "./testA",
+                    "moduleSystem": "es6",
+                    "matchesDoNotFollow": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "fs",
+                    "coreModule": true,
+                    "followable": false,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "core"
+                    ],
+                    "module": "fs",
+                    "moduleSystem": "es6",
+                    "matchesDoNotFollow": false,
+                    "valid": true
+                }
+            ],
+            "valid": true
+        },
+        {
+            "source": "fs",
+            "followable": false,
+            "coreModule": true,
+            "couldNotResolve": false,
+            "matchesDoNotFollow": false,
+            "dependencyTypes": [
+                "core"
+            ],
+            "dependencies": [],
+            "valid": true
+        },
+        {
+            "source": "fixtures/testA.js",
+            "dependencies": [
+                {
+                    "resolved": "fs",
+                    "coreModule": true,
+                    "followable": false,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "core"
+                    ],
+                    "module": "fs",
+                    "moduleSystem": "es6",
+                    "matchesDoNotFollow": false,
+                    "valid": true
+                }
+            ],
+            "valid": true
+        }
+    ],
+    "summary": {
+        "violations": [],
+        "error": 0,
+        "warn": 0,
+        "info": 0,
+        "totalCruised": 3,
+        "optionsUsed": {
+            "outputTo": "-",
+            "moduleSystems": [
+                "amd",
+                "cjs",
+                "es6"
+            ],
+            "outputType": "json",
+            "tsPreCompilationDeps": false,
+            "preserveSymlinks": false
+        }
+    }
+}
